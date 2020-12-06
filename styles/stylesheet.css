@@ -631,6 +631,21 @@ h3.delay:hover {
 }
 
 /* ------------------------------------------------------------------
+Accessiblity :l
+------------------------------------------------------------------- */
+.sr-only:not(:focus):not(:active) {
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden !important;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* ------------------------------------------------------------------
 Calendar CSS :D
 ------------------------------------------------------------------- */
 .tooltip {
